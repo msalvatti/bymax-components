@@ -36,6 +36,10 @@ import {
  * - onChange -> Function that returns every time the component's value is changed (Returns the complete object chosen in options)
  * - onFormikChange -> Function for integration with the Formik component, triggered every time the component's value changes
  * - onFormikBlur -> Function for integration with the Formik component, triggered every time the component loses focus
+ * - inputValue -> Controlled input value for the search input (optional). When provided, controls the value of the internal search input
+ * - onInputChange -> Function called when the input value changes (optional). Receives the new input value and action metadata. Useful for implementing async search functionality
+ * - onKeyDown -> Function called when a key is pressed in the input (optional). Receives the keyboard event. Useful for triggering search on Enter key press
+ * - onKeyUp -> Function called when a key is released in the input (optional). Receives the keyboard event. Useful for handling key release events
  */
 export const Select = (props) => {
   const maxOptions = 1;
@@ -307,6 +311,10 @@ export const Select = (props) => {
       menuPortalTarget={props.menuPortalTarget ?? undefined}
       menuPosition={props.menuPortalTarget ? "absolute" : undefined}
       menuPlacement={props.menuPortalTarget ? "bottom" : undefined}
+      inputValue={props.inputValue}
+      onInputChange={props.onInputChange}
+      onKeyDown={props.onKeyDown}
+      onKeyUp={props.onKeyUp}
     />
   );
 };
