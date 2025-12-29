@@ -1,4 +1,4 @@
-import{j as n,a as t,F as l,S as s,s as c}from"./Select.stories-4ba5aab2.js";import{M as a,C as h}from"./index-e7920d12.js";import{u as r}from"./index-a1cf9e47.js";import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";import"./isNativeReflectConstruct-a221c5d1.js";import"./index-d3ea75b5.js";import"./iframe-fcce4e2f.js";import"../sb-preview/runtime.js";import"./index-11d98b33.js";import"./index-8fd8397b.js";import"./index-356e4a49.js";function i(o){const e=Object.assign({h1:"h1",p:"p",a:"a",h2:"h2",ul:"ul",li:"li",strong:"strong",code:"code"},r(),o.components);return t(l,{children:[n(a,{of:s}),`
+import{j as n,a as t,F as r,S as s,s as a}from"./Select.stories-63536c00.js";import{M as c,C as h}from"./index-492c8ac7.js";import{u as l}from"./index-a1cf9e47.js";import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";import"./isNativeReflectConstruct-a221c5d1.js";import"./index-d3ea75b5.js";import"./iframe-55482934.js";import"../sb-preview/runtime.js";import"./index-11d98b33.js";import"./index-8fd8397b.js";import"./index-356e4a49.js";function o(i){const e=Object.assign({h1:"h1",p:"p",a:"a",h2:"h2",ul:"ul",li:"li",strong:"strong",code:"code"},l(),i.components);return t(r,{children:[n(c,{of:s}),`
 `,n(e.h1,{id:"select",children:"Select"}),`
 `,t(e.p,{children:[n("b",{children:"bymax React Select"})," is a component created using the ",n(e.a,{href:"https://react-select.com",target:"_blank",rel:"nofollow noopener noreferrer",children:"react-select"}),` component, a flexible and beautiful select input control for ReactJS
 with multiselect, singleselect and search system.`]}),`
@@ -9,6 +9,7 @@ in integration with the `,n(e.a,{href:"https://formik.org/",target:"_blank",rel:
 `,t(e.ul,{children:[`
 `,t(e.li,{children:[n(e.strong,{children:"id"}),": Identifier"]}),`
 `,t(e.li,{children:[n(e.strong,{children:"value"}),": Current value, must be an object as follows: ",n(e.code,{children:"{ id: '', value: '', label: '', image: '', base: '', quote: '' }"})]}),`
+`,t(e.li,{children:[n(e.strong,{children:"inputValue"}),": Controlled input value for the search input (optional). When provided, controls the value of the internal search input"]}),`
 `,t(e.li,{children:[n(e.strong,{children:"isMulti"}),": Allows you to choose several options (true: Multi Selection | false: Single selection)"]}),`
 `,t(e.li,{children:[n(e.strong,{children:"isInvalid"}),": Data verification status (true: Changes the component's border color to red | false: Maintains the component's border color respecting the applied style)"]}),`
 `,t(e.li,{children:[n(e.strong,{children:"isLocked"}),": Shows the value and blocks the component, preventing it from changing its value (true: enable | false: disable)"]}),`
@@ -35,5 +36,8 @@ in integration with the `,n(e.a,{href:"https://formik.org/",target:"_blank",rel:
 `,t(e.li,{children:[n(e.strong,{children:"onChange"}),": Function that returns every time the component's value is changed (Returns the complete object chosen in options)"]}),`
 `,t(e.li,{children:[n(e.strong,{children:"onFormikChange"}),": Function for integration with the Formik component, triggered every time the component's value changes"]}),`
 `,t(e.li,{children:[n(e.strong,{children:"onFormikBlur"}),": Function for integration with the Formik component, triggered every time the component loses focus"]}),`
+`,t(e.li,{children:[n(e.strong,{children:"onInputChange"}),": Function called when the input value changes (optional). Receives the new input value and action metadata. Useful for implementing async search functionality"]}),`
+`,t(e.li,{children:[n(e.strong,{children:"onKeyDown"}),": Function called when a key is pressed in the input (optional). Receives the keyboard event. Useful for triggering search on Enter key press"]}),`
+`,t(e.li,{children:[n(e.strong,{children:"onKeyUp"}),": Function called when a key is released in the input (optional). Receives the keyboard event. Useful for handling key release events"]}),`
 `]}),`
-`,n(h,{of:c})]})}function S(o={}){const{wrapper:e}=Object.assign({},r(),o.components);return e?n(e,Object.assign({},o,{children:n(i,o)})):i(o)}export{S as default};
+`,n(h,{of:a})]})}function M(i={}){const{wrapper:e}=Object.assign({},l(),i.components);return e?n(e,Object.assign({},i,{children:n(o,i)})):o(i)}export{M as default};

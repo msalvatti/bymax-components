@@ -132,6 +132,7 @@ export default function App() {
 
 - **id**: Identifier
 - **value**: Current value, must be an object as follows: ```{ id: '', value: '', label: '', image: '', base: '', quote: '' }```
+- **inputValue**: Controlled input value for the search input (optional). When provided, controls the value of the internal search input
 - **isMulti**: Allows you to choose several options (true: Multi Selection | false: Single selection)
 - **isInvalid**: Data verification status (true: Changes the component's border color to red | false: Maintains the component's border color respecting the applied style)
 - **isLocked**: Shows the value and blocks the component, preventing it from changing its value (true: enable | false: disable)
@@ -155,7 +156,6 @@ export default function App() {
 - **onChange**: Function that returns every time the component's value is changed (Returns the complete object chosen in options)
 - **onFormikChange**: Function for integration with the Formik component, triggered every time the component's value changes
 - **onFormikBlur**: Function for integration with the Formik component, triggered every time the component loses focus
-- **inputValue**: Controlled input value for the search input (optional). When provided, controls the value of the internal search input
 - **onInputChange**: Function called when the input value changes (optional). Receives the new input value and action metadata. Useful for implementing async search functionality
 - **onKeyDown**: Function called when a key is pressed in the input (optional). Receives the keyboard event. Useful for triggering search on Enter key press
 - **onKeyUp**: Function called when a key is released in the input (optional). Receives the keyboard event. Useful for handling key release events
