@@ -294,6 +294,7 @@ export const Select = (props) => {
           ? values
           : maxValues
       }
+      inputValue={props.inputValue}
       controlShouldRenderValue={!menuIsOpen || props.isMulti}
       noOptionsMessage={() => props.noOptionsMessage}
       isLoading={props.isLoading}
@@ -311,7 +312,6 @@ export const Select = (props) => {
       menuPortalTarget={props.menuPortalTarget ?? undefined}
       menuPosition={props.menuPortalTarget ? "absolute" : undefined}
       menuPlacement={props.menuPortalTarget ? "bottom" : undefined}
-      inputValue={props.inputValue}
       onInputChange={props.onInputChange}
       onKeyDown={props.onKeyDown}
       onKeyUp={props.onKeyUp}
